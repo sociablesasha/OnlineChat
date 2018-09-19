@@ -94,10 +94,4 @@ public class TalkController {
 
 
 ## Histories
-    2018.09.01. ~ 2018.09.01. Default Setting.
-    2018.09.02. ~ 2018.09.02. Define REST API.
-    2018.09.03. ~ 2018.09.04. Define Database.
-    2018.09.05. ~ 2018.09.09. Facebook OAuth.
-    2018.09.10. ~ 2018.09.10. User.
-    2018.09.11. ~ 2018.09.11. Party.
-    2018.09.12. ~ 2018.09.12. Log.
+    2018.09.18. ~ 2018.09.19. WebSocket MessageBroker
