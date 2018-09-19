@@ -1,0 +1,209 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+
+    overflow: hidden;
+}
+
+input:focus {
+    outline: 0;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.wrapper {
+    display: inline-block;
+
+    width: 50%;
+    height: 100%;
+}
+
+.wrapper:first-child {
+    float: left;
+}
+
+.wrapper:last-child {
+    float: right;
+}
+
+.connect {
+    padding: 5%;
+
+    background: darkseagreen;
+}
+
+.connect button {
+    border: 5px solid whitesmoke;
+    border-radius: 5px;
+
+    color: whitesmoke;
+    font-size: 2rem;
+    background: none;
+}
+
+.connect::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.connect button:disabled {
+    border: 5px solid dimgrey;
+    border-radius: 5px;
+
+    color: dimgrey;
+    font-size: 2rem;
+    background: none;
+
+    cursor: not-allowed;
+}
+
+.connect button:first-child {
+    float: left;
+}
+
+.connect button:last-child {
+    float: right;
+}
+
+.member {
+    height: 100%;
+
+    padding: 5%;
+
+    color: whitesmoke;
+    background: darksalmon;
+}
+
+.member th {
+    font-style: oblique;
+    font-size: 60px;
+}
+
+.member td {
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-size: 30px;
+}
+
+.talk-receive {
+    height: 87.5%;
+
+    padding: 5%;
+
+    color: whitesmoke;
+
+    background: darkkhaki;
+
+    overflow: scroll;
+}
+
+.talk-receive table {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: scroll;
+}
+
+.talk-receive table thead {
+    display: block;
+
+    width: 100%;
+}
+
+.talk-receive table tr {
+    display: block;
+
+    width: 100%;
+}
+
+.talk-receive table thead th {
+    display: block;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.talk-receive table tbody {
+    display: block;
+
+    width: 100%;
+}
+
+.talk-receive table tbody tr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.talk-receive table tbody td {
+    display: inline;
+
+    padding: 5px;
+
+    border-radius: 10px;
+
+    color: dimgray;
+    font-size: 20px;
+
+    background: whitesmoke;
+}
+
+.talk-send {
+    height: 2.5%;
+
+    padding: 5%;
+
+    background: darkgray;
+}
+
+.talk-send form {
+    width: 100%;
+    height: 100%;
+}
+
+.talk-send input {
+    width: 80%;
+    height: 100%;
+
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.talk-send button {
+    float: right;
+
+    width: 20%;
+    height: 100%;
+
+    padding: 0;
+    border: 0;
+    margin: 0;
+
+    color: whitesmoke;
+    background: gray;
+}
+
+.talk-send button:disabled {
+    color: gray;
+    background: whitesmoke;
+
+    cursor: not-allowed;
+}
