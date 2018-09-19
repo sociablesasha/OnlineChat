@@ -14,13 +14,11 @@ public class TalkController {
 
     static ArrayList<String> members = new ArrayList<>();
 
-    @CrossOrigin(origins = "*", allowedHeaders = "*")
     @RequestMapping("/")
     public String index() {
         return "index";
     }
 
-    @CrossOrigin(origins = "*", allowedHeaders = "*")
     @MessageMapping("/in")
     @SendTo("/receive/member")
     public ArrayList<String> in (Talk talk) {
@@ -28,7 +26,6 @@ public class TalkController {
         return members;
     }
 
-    @CrossOrigin(origins = "*", allowedHeaders = "*")
     @MessageMapping("/out")
     @SendTo("/receive/member")
     public ArrayList<String> out (Talk talk) {
@@ -36,7 +33,6 @@ public class TalkController {
         return members;
     }
 
-    @CrossOrigin(origins = "*", allowedHeaders = "*")
     @MessageMapping("/chats")
     @SendTo("/receive/chats")
     public String talk(Talk talk) {

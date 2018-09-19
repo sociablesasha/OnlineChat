@@ -8,7 +8,7 @@ function setConnected(connected) {
 }
 
 function connect() {
-    name = prompt("이름을 입력해주세요.");
+    name = prompt("Please Input the name.");
 
     var socket = new SockJS('/websocket');
     stompClient = Stomp.over(socket);
